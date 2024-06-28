@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="login.js" defer></script>
+    <title>Document</title>
+    <style>body{
+        margin:0;
+        padding:0;
+        background: rgb(2,0,36);
+        background: linear-gradient(0deg, #5900ff 0%, #ffffff 100%);
+        background-attachment: fixed;
+        margin:0;
+    }
+    #loginform{
+        margin: 20vh auto 0 auto;
+        background-color: white;
+        padding:30px;
+        border-radius: 5px;
+        width: 400px;
+    }
+    h1{
+        text-align: center;
+        color:blueviolet
+    }
+    button{
+        background-color: blueviolet;
+        color:white;
+        border:1px solid blueviolet;
+        border-radius: 5px;
+        padding:5px;
+        margin:20px 0px;
+        cursor: pointer;
+        font-size:20px;
+        width:100%;
+    
+    }
+    
+    .logingroup{
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .logingroup input{
+        border-radius: 5px;
+        font-size:15px;
+        margin-top: 5px;
+        padding: 10px;
+        
+    }
+    .logingroup input:focus{
+        outline: 0;
+    
+    }
+    .logingroup  .error{
+        color:red;
+        font-size:15px ;
+        margin-top: 5px;
+    }
+    .logingroup.success input{
+        border-color: #0cc477;
+    }
+    
+    .logingroup.error input{
+        border-color:rgb(206,67,67)
+    }</style>
+</head>
+<body>
+    <div class="container">
+        <form id="loginform">
+            <h1>LOG IN</h1>
+            
+            <div class="logingroup">
+                <label for="loginemail">Email</label>
+                <input type="text" id="loginemail" name="email" >
+                <div class="error"></div>
+            </div>
+            <div class="logingroup">
+                <label for="loginpassword">Password</label>
+                <input type="password" id="loginpassword" name="password" >
+                <div class="error"></div>
+            </div>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
